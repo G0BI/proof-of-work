@@ -57,14 +57,6 @@ public class PoW extends Thread {
         }
     }
 
-    // nonce generator for integers
-    public int randomNonce(int randomNonce) {
-        Random random = new Random();
-        randomNonce = random.nextInt(1000000000);
-
-        return randomNonce;
-    }
-
     // nonce generator for characters
     public String generateNonce() {
         Random random = new Random();
